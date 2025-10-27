@@ -1,9 +1,7 @@
 -- SQL schema reference for PostgreSQL (simplified)
 CREATE TABLE users (
-  id SERIAL PRIMARY KEY,
   full_name VARCHAR(255) NOT NULL,
   phone VARCHAR(50) UNIQUE NOT NULL,
-  email VARCHAR(255),
   password_hash VARCHAR(255) NOT NULL,
   role VARCHAR(20) NOT NULL DEFAULT 'client',
   city VARCHAR(100),
